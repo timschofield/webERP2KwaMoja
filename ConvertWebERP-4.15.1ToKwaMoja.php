@@ -68,15 +68,34 @@ function delete_directory($dirname) {
 echo  "\n";
 echo '************************************************************************' . "\n";
 echo  "\n";
-echo 'This script is designed to convert a webERP database into a KwaMoja' . "\n" . 'database.' . "\n";
-echo 'It performs other housework on your new KwaMoja instance to enable it to' . "\n" . 'run with your webERP data.' . "\n";
+echo 'This script is designed to convert a webERP database into a KwaMoja' . "\n" .
+     'database.' . "\n";
+echo 'It performs other housework on your new KwaMoja instance to enable it to' . "\n" .
+     'run with your webERP data.' . "\n";
 echo 'To run this script you will need to have both the webERP and the KwaMoja' . "\n" .
      'code installed on the same machine that you are running this script.' . "\n";
 echo 'This script assumes that the database user and password in the config.php' . "\n" .
      'file in your webERP instance has permissions to CREATE and DROP databases.' . "\n" .
      'If this is not so, you should temporarily make it so. Please see the mysql' . "\n" .
      'documentation if you are unsure how to do this.' . "\n";
-
+echo 'This script takes 3 parameters. The first is the name of the webERP' . "\n" .
+	 'to be converted. This database will not be altered, and the new database' . "\n" .
+	 'will have this name but will have a suffix of _1 attached to it. eg If' . "\n" .
+	 'your webERP database is called weberp then the converted database will be' . "\n" .
+	 'called weberp_1.' . "\n" .
+	 "\e[0;31mWARNING - If a database already exists with this name then it will be deleted.\e[0m\n";
+echo 'The second parameter is the path to the webERP code. This can be an' . "\n" .
+     'absolute path, or a path relative to the directory that the script is' . "\n" .
+     'being run from.' . "\n";
+echo 'The third parameter is the path to the KwaMoja code. This can be an' . "\n" .
+     'absolute path, or a path relative to the directory that the script is' . "\n" .
+     'being run from.' . "\n";
+echo 'So running the script in the web root, with a webERP database named weberp' . "\n" .
+     'the command would look something like:' . "\n\n";
+echo 'ConvertwebERP-4.15.1ToKwaMoja.php weberp webERP/ KwaMoja/' . "\n\n";
+echo "\e[0;31mWARNING - Please note. Every effort has been made to ensure this script runs safely.\e[0m\n";
+echo "\e[0;31mHowever the KwaMoja team accepts no responsibility for any data loss that might occur.\e[0m\n";
+echo "\e[0;31mIt is your responsibility to ensure you have backed up all your data correctly.\e[0m\n";
 echo  "\n";
 echo '************************************************************************' . "\n";
 echo  "\n";
