@@ -27,7 +27,10 @@ being run from.
 So running the script in the web root, with a webERP database named weberp
 the command would look something like:
 
-ConvertwebERP-4.15.1ToKwaMoja.php weberp webERP/ KwaMoja/
+ConvertwebERPToKwaMoja.php weberp webERP/ KwaMoja/
+
+Each branch is a different webERP version and the script will work to convert from that 
+version of webERP to the latest KwaMoja.
 
 WARNING - Please note. Every effort has been made to ensure this script runs safely.
 However the KwaMoja team accepts no responsibility for any data loss that might occur.
