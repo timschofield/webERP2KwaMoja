@@ -92,7 +92,7 @@ echo 'The third parameter is the path to the KwaMoja code. This can be an' . "\n
      'being run from.' . "\n";
 echo 'So running the script in the web root, with a webERP database named weberp' . "\n" .
      'the command would look something like:' . "\n\n";
-echo 'ConvertwebERP-4.15.1ToKwaMoja.php weberp webERP/ KwaMoja/' . "\n\n";
+echo 'ConvertwebERPToKwaMoja.php weberp webERP/ KwaMoja/' . "\n\n";
 echo "\e[0;31mWARNING - Please note. Every effort has been made to ensure this script runs safely.\e[0m\n";
 echo "\e[0;31mHowever the KwaMoja team accepts no responsibility for any data loss that might occur.\e[0m\n";
 echo "\e[0;31mIt is your responsibility to ensure you have backed up all your data correctly.\e[0m\n";
